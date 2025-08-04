@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222.2, 84%, 4.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222.2, 84%, 4.9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222.2, 84%, 4.9%);
+  --radius: 0.75rem;
+  
+  /* Brand colors */
+  --brand-blue: hsl(207, 90%, 54%);
+  --brand-violet: hsl(248, 53%, 58%);
+  --brand-cyan: hsl(186, 94%, 42%);
+  
+  /* Custom light theme colors */
+  --gradient-bg: linear-gradient(to bottom right, hsl(210, 40%, 98%), hsl(214, 32%, 96%));
+  --hero-bg: linear-gradient(to bottom right, hsl(210, 40%, 98%), hsl(210, 100%, 97%));
+}
+
+.dark {
+  --background: hsl(224, 71%, 4%);
+  --foreground: hsl(213, 31%, 91%);
+  --muted: hsl(223, 47%, 11%);
+  --muted-foreground: hsl(215.4, 16.3%, 56.9%);
+  --popover: hsl(224, 71%, 4%);
+  --popover-foreground: hsl(213, 31%, 91%);
+  --card: hsl(224, 71%, 4%);
+  --card-foreground: hsl(213, 31%, 91%);
+  --border: hsl(216, 34%, 17%);
+  --input: hsl(216, 34%, 17%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(222.2, 84%, 4.9%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(216, 34%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(216, 34%, 17%);
+  
+  /* Custom dark theme colors */
+  --gradient-bg: linear-gradient(to bottom right, hsl(224, 71%, 4%), hsl(223, 47%, 11%));
+  --hero-bg: linear-gradient(to bottom right, hsl(224, 71%, 4%), hsl(221, 83%, 6%));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-brand-blue {
+    color: var(--brand-blue);
+  }
+  
+  .text-brand-violet {
+    color: var(--brand-violet);
+  }
+  
+  .text-brand-cyan {
+    color: var(--brand-cyan);
+  }
+  
+  .bg-brand-blue {
+    background-color: var(--brand-blue);
+  }
+  
+  .bg-brand-violet {
+    background-color: var(--brand-violet);
+  }
+  
+  .bg-brand-cyan {
+    background-color: var(--brand-cyan);
+  }
+  
+  .border-brand-blue {
+    border-color: var(--brand-blue);
+  }
+  
+  .border-brand-violet {
+    border-color: var(--brand-violet);
+  }
+  
+  .border-brand-cyan {
+    border-color: var(--brand-cyan);
+  }
+}
