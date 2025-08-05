@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Form,
   FormControl,
@@ -24,11 +23,9 @@ import {
   Code, 
   Link, 
   Settings, 
-  Star, 
   CheckCircle, 
   Mail, 
   MessageCircle,
-  ArrowRight,
   Send,
   Zap,
   Clock,
@@ -91,27 +88,6 @@ export default function Home() {
   const onSubmit = (data: InsertContactSubmission) => {
     submitContactForm.mutate(data);
   };
-
-  const cases = [
-    {
-      title: "Скорочення витрат на обслуговування клієнтів на 70%",
-      description: "Виклик: Щоденно 200+ дзвінків, перевантажений відділ продажів\nРішення: Telegram-бот з AI + CRM інтеграція\nРезультат: Економія 15 000$/місяць, покращення якості обслуговування",
-      tags: ["Telegram Bot", "AI", "CRM"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      title: "Збільшення прибутку ресторану на 85%",
-      description: "Виклик: Втрата клієнтів через черги, неефективне обслуговування\nРішення: QR-система замовлень + аналітика\nРезультат: +85% виручки, скорочення часу обслуговування в 3 рази",
-      tags: ["Web App", "Analytics", "Payment"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      title: "Автоматизація бронювання - ROI 320%",
-      description: "Виклик: Втрата 40% клієнтів через неефективне бронювання\nРішення: Повна автоматизація з інтеграцією календарів\nРезультат: ROI 320%, збільшення завантаженості на 60%",
-      tags: ["Automation", "Calendar", "Integration"],
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
-    }
-  ];
 
   const partners = [
     {
