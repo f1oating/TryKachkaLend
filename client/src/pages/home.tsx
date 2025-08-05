@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import Logo from "@/components/Logo";
 import {
   Form,
   FormControl,
@@ -155,13 +156,13 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold text-brand-blue">DevBot Solutions</div>
+            <Logo/>
             <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-muted-foreground hover:text-brand-blue transition-colors" data-testid="nav-services">
-                Рішення
-              </a>
               <a href="#testimonials" className="text-muted-foreground hover:text-brand-blue transition-colors" data-testid="nav-testimonials">
                 Партнери
+              </a>
+              <a href="#services" className="text-muted-foreground hover:text-brand-blue transition-colors" data-testid="nav-services">
+                Рішення
               </a>
               <a href="#contact" className="text-muted-foreground hover:text-brand-blue transition-colors" data-testid="nav-contact">
                 Контакти
@@ -484,7 +485,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-xl font-bold text-brand-blue mb-4" data-testid="text-footer-logo">DevBot Solutions</div>
+              <div className="text-xl font-bold text-brand-blue mb-4" data-testid="text-footer-logo">TryKachka</div>
               <p className="text-slate-400 mb-4" data-testid="text-footer-description">
                 Розробляємо індивідуальні IT-рішення для оптимізації бізнес-процесів. Якість, швидкість, результат.
               </p>
@@ -517,7 +518,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 dark:border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p data-testid="text-footer-copyright">&copy; 2024 DevBot Solutions. Якісні IT-рішення для вашого бізнесу.</p>
+            <p data-testid="text-footer-copyright">&copy; 2024 TryKachka. Якісні IT-рішення для вашого бізнесу.</p>
           </div>
         </div>
       </footer>
